@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="biblioteca.xsd"
+>
+  <!-- - LIBROS - -->
+  <libros>
+    <libro id="L1111" tipo_clase_libro="novela" num_paginas_libro="286">
+      <titulo_libro>El último deseo</titulo_libro>
+
+      <sinopsis>
+        Esta antología consta de siete cuentos. Geralt de Rivia, tras ser herido
+        en su lucha con la Estrige de Wizima, descansa en un templo. Durante ese
+        lapso tiene recuerdos de eventos recientes de su vida, cada uno formando
+        una historia en sí.
+      </sinopsis>
+
+      <indice_libro>
+        1.- El brujo. 2.- El mal menor. 3.- El último deseo.
+      </indice_libro>
+
+      <capitulo num_paginas_cap="100">
+        <titulo_cap>El brujo</titulo_cap>
+        <contenido_cap enlace="https://www.youtube.com/watch?v=VlBIrR_tu5g" />
+      </capitulo>
+
+      <capitulo num_paginas_cap="100">
+        <titulo_cap>El mal menor</titulo_cap>
+        <contenido_cap enlace="https://www.youtube.com/watch?v=VlBIrR_tu5g" />
+      </capitulo>
+
+      <capitulo num_paginas_cap="86">
+        <titulo_cap>El último deseo</titulo_cap>
+        <contenido_cap enlace="https://www.youtube.com/watch?v=VlBIrR_tu5g" />
+      </capitulo>
+    </libro>
+
+    <libro id="L2222" tipo_clase_libro="infantil" num_paginas_libro="143">
+      <titulo_libro>Alicia en el país de la maravillas</titulo_libro>
+
+      <sinopsis>
+        La historia cuenta cómo una niña llamada Alicia cae por un agujero,
+        encontrándose en un mundo peculiar y extraño, poblado por humanos y
+        criaturas antropomórficas.
+      </sinopsis>
+
+      <indice_libro>
+        Capítulo I: El descenso por la madriguera. Capítulo IV: La habitación
+        del Conejo Blanco. Capítulo XII: La declaración de Alicia.
+      </indice_libro>
+
+      <capitulo num_paginas_cap="47">
+        <titulo_cap>El descenso por la madriguera</titulo_cap>
+        <contenido_cap enlace="https://www.youtube.com/watch?v=Po49UEGQBLk" />
+      </capitulo>
+
+      <capitulo num_paginas_cap="48">
+        <titulo_cap>La habitación del Conejo Blanco</titulo_cap>
+        <contenido_cap enlace="https://www.youtube.com/watch?v=Vj6Ai3fp3YA" />
+      </capitulo>
+
+      <capitulo num_paginas_cap="48">
+        <titulo_cap>La declaración de Alicia</titulo_cap>
+        <contenido_cap enlace="https://www.youtube.com/watch?v=eRVxCZ85hzY" />
+      </capitulo>
+    </libro>
+
+    <libro id="L3333" tipo_clase_libro="didactico" num_paginas_libro="250">
+      <titulo_libro>Aprenda usted magia.</titulo_libro>
+
+      <sinopsis>
+        Libro de iniciación a la magia. El autor, Juan Tamariz, con su forma de
+        escribir (que es igual de divertida que en sus actuaciones), inicia al
+        profano en el fascinante mundo de la magia.
+      </sinopsis>
+
+      <indice_libro>
+        I.La magia. III.Fundamentos del ilusionismo. VI.Efectos de magia cómica.
+      </indice_libro>
+
+      <capitulo num_paginas_cap="100">
+        <titulo_cap>CI.La magia.</titulo_cap>
+        <contenido_cap enlace="https://www.youtube.com/watch?v=AvN1tZBD0QQ" />
+      </capitulo>
+
+      <capitulo num_paginas_cap="75">
+        <titulo_cap>III.Fundamentos del ilusionismo.</titulo_cap>
+        <contenido_cap enlace="https://www.youtube.com/watch?v=aCSYbzR3muY" />
+      </capitulo>
+
+      <capitulo num_paginas_cap="75">
+        <titulo_cap>VI.Efectos de magia cómica.</titulo_cap>
+        <contenido_cap enlace="https://www.youtube.com/watch?v=b9I4xbTPD5A" />
+      </capitulo>
+    </libro>
+  </libros>
+
+  <!-- - REVISTAS - -->
+
+  <revistas>
+    <revista
+      id="R1111"
+      tipo_clase_revista="informatica"
+      num_paginas_revista="100"
+    >
+      <titulo_revista>Designer vs dev</titulo_revista>
+      <numero>12</numero>
+      <indice_revista>
+        1.- Dura batalla 2.- Un diseñador UI/UX y un ingeniero entran a un bar
+        y...
+      </indice_revista>
+
+      <seccion_revista num_paginas_seccion="50">
+        <contenido_seccion
+          enlace="https://www.youtube.com/shorts/5qHHm7ooavo"
+        />
+      </seccion_revista>
+      <seccion_revista num_paginas_seccion="50">
+        <contenido_seccion
+          enlace="https://www.youtube.com/shorts/W-d-t5mtSZM"
+        />
+      </seccion_revista>
+    </revista>
+
+    <revista id="R2222" tipo_clase_revista="corazon" num_paginas_revista="200">
+      <titulo_revista>Todo sobre Pedro Pascal</titulo_revista>
+      <numero>323</numero>
+      <indice_revista>
+        1 - Así se llama. 2 - Daddy is a state of mind.
+      </indice_revista>
+
+      <seccion_revista num_paginas_seccion="100">
+        <contenido_seccion
+          enlace="https://www.youtube.com/shorts/ujHZdtmXjsY"
+        />
+      </seccion_revista>
+      <seccion_revista num_paginas_seccion="100">
+        <contenido_seccion
+          enlace="https://www.youtube.com/shorts/0k4-lglLsLs"
+        />
+      </seccion_revista>
+    </revista>
+
+    <revista id="R3333" tipo_clase_revista="coches" num_paginas_revista="150">
+      <titulo_revista>El coche fantástico</titulo_revista>
+      <numero>45</numero>
+      <indice_revista> 1.- Intro no oficial 2.- Intro oficial </indice_revista>
+
+      <seccion_revista num_paginas_seccion="75">
+        <contenido_seccion
+          enlace="https://www.youtube.com/watch?v=fsxVo6WqI8w"
+        />
+      </seccion_revista>
+      <seccion_revista num_paginas_seccion="75">
+        <contenido_seccion
+          enlace="https://www.youtube.com/watch?v=gfYl6-RyAlM"
+        />
+      </seccion_revista>
+    </revista>
+
+    <revista
+      id="R4444"
+      tipo_clase_revista="investigacion"
+      num_paginas_revista="250"
+    >
+      <titulo_revista>Laboratorios del mundo</titulo_revista>
+      <numero>120</numero>
+      <indice_revista>
+        1. Historias de laboratorio 2. Historias de laboratorio 2
+      </indice_revista>
+
+      <seccion_revista num_paginas_seccion="125">
+        <contenido_seccion
+          enlace="https://www.youtube.com/watch?v=yRsB9KzX5d0"
+        />
+      </seccion_revista>
+      <seccion_revista num_paginas_seccion="125">
+        <contenido_seccion
+          enlace="https://www.youtube.com/watch?v=TUII7oRlaAU"
+        />
+      </seccion_revista>
+    </revista>
+
+    <revista id="R5555" tipo_clase_revista="otras" num_paginas_revista="100">
+      <titulo_revista>Bailes del mundo</titulo_revista>
+      <numero>400</numero>
+      <indice_revista>
+        1- Los pasos prohibidos 2- Moverse al ritmo de electro-swing
+      </indice_revista>
+
+      <seccion_revista num_paginas_seccion="50">
+        <contenido_seccion
+          enlace="https://www.youtube.com/watch?v=nVmXsBNfwHY"
+        />
+      </seccion_revista>
+      <seccion_revista num_paginas_seccion="50">
+        <contenido_seccion
+          enlace="https://www.youtube.com/watch?v=5ueJ4-lTa1s"
+        />
+      </seccion_revista>
+    </revista>
+  </revistas>
+
+  <!-- - PERIÓDICOS - -->
+
+  <periodicos>
+    <periodico
+      id="P1111"
+      tipo_clase_periodico="nacional"
+      fecha_publicacion="1996-08-12"
+    >
+      <indice_periodico>
+        Superintendente. Ofelia. Mortadelo. Filemon. Profesor Bacterio. Don
+        Pantunflo.
+      </indice_periodico>
+
+      <seccion_periodico tipo_seccion_periodico="economica">
+        <articulo autor="Superintendente">
+          <contenido_articulo enlace="https://example.com/" />
+        </articulo>
+
+        <articulo autor="Ofelia">
+          <contenido_articulo enlace="https://example.com/" />
+        </articulo>
+      </seccion_periodico>
+
+      <seccion_periodico tipo_seccion_periodico="opinion">
+        <articulo autor="Mortadelo">
+          <contenido_articulo enlace="https://example.com/" />
+        </articulo>
+
+        <articulo autor="Filemon">
+          <contenido_articulo enlace="https://example.com/" />
+        </articulo>
+      </seccion_periodico>
+
+      <seccion_periodico tipo_seccion_periodico="nacional">
+        <articulo autor="Profesor Bacterio">
+          <contenido_articulo enlace="https://example.com/" />
+        </articulo>
+
+        <articulo autor="Don Pantunflo">
+          <contenido_articulo enlace="https://example.com/" />
+        </articulo>
+      </seccion_periodico>
+    </periodico>
+
+    <periodico
+      id="P2222"
+      tipo_clase_periodico="internacional"
+      fecha_publicacion="1997-08-12"
+    >
+      <indice_periodico> Zipi. Zape. Tintín. Milú. </indice_periodico>
+
+      <seccion_periodico tipo_seccion_periodico="deportes">
+        <articulo autor="Zipi">
+          <contenido_articulo enlace="https://example.com/" />
+        </articulo>
+
+        <articulo autor="Zape">
+          <contenido_articulo enlace="https://example.com/" />
+        </articulo>
+      </seccion_periodico>
+
+      <seccion_periodico tipo_seccion_periodico="internacional">
+        <articulo autor="Tintín">
+          <contenido_articulo enlace="https://example.com/" />
+        </articulo>
+
+        <articulo autor="Milú">
+          <contenido_articulo enlace="https://example.com/" />
+        </articulo>
+      </seccion_periodico>
+    </periodico>
+  </periodicos>
+</biblioteca>

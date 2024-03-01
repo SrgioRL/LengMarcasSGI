@@ -1,0 +1,131 @@
+@import url(index.css);
+
+.formulario {
+  width: 40%;
+  max-width: 600px;
+  height: auto;
+  padding: 10px;
+  margin: 70px auto;
+  text-align: center;
+  font-size: 1.2em;
+  color: #ffffff;
+  background-color: #086075;
+  border-radius: 8px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+fieldset {
+  border-style: none;
+  margin: 5px;
+}
+
+legend {
+  margin-bottom: 25px;
+}
+
+.formulario h2 {
+  padding: 10px;
+}
+
+label {
+  display: block;
+  float: left;
+  padding-left: 15px;
+}
+
+input {
+  width: 95%;
+  height: 40px;
+  background-color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #075669;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+textarea {
+  resize: none;
+  width: 95%;
+  height: 150px;
+  background-color: #ffffff;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #075669;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+input[type="checkbox"] {
+  margin-top: 0;
+  scale: 0.5;
+}
+#condiciones {
+  margin-top: 30px;
+}
+a {
+  text-decoration: none;
+  color: rgb(79, 247, 191);
+}
+
+#submit {
+  width: 95%;
+  height: 45px;
+  color: #ffffff;
+  background-color: #043a47;
+  border: 2px solid #075669;
+  border-radius: 8px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+#clear {
+  width: 55%;
+  height: 30px;
+  color: #ffffff;
+  background-color: #043a47;
+  border: 2px solid #075669;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/*----- DISEÑO RESPONSIVO -----*/
+
+/* Desde el diseño base, se ha tenido en cuenta el diseño responsivo 
+y la futura adaptación a dispositivos móviles, por lo que los ajustes son mínimos*/
+
+/* Adaptación de ancho fijo de resoluciones de más de 1300px de ancho.*/
+/* Por la estructura y tamaños de la página base, se adapta a esta resolución sin modificaciones*/
+
+
+/* Adaptación para tablets, usando de referencia iPad Air 
+(opción predefinida en las herramientas de desarrollador de Chrome.
+Adapta tanto en vertical como en horizontal gracias a los ajustes de diseño base */
+
+@media screen and (min-width: 820px) and (max-width: 1300px) {
+  .formulario {
+    width:50%;
+    font-size: 1.3em;
+  }
+}
+
+/* Adaptación para móviles, usando de referencia iPhone 12 Pro 
+(opción predefinida en las herramientas de desarrollador de Chrome 
+Adapta tanto en vertical como en horizontal gracias a los ajustes de diseño base */
+
+@media screen and (min-width: 390px) and (max-width: 819px) {
+  .formulario {
+    width: 85%;
+    font-size: 0.9em;
+  }
+
+  
+}

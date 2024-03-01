@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+
+/* Se usará este index.css mediante @import como base para el resto de páginas, 
+con el objetivo de reducir la cantidad de líneas y elementos en cada hoja.
+
+En cada hoja de estlos se trabajará con los elementos propios de la misma, 
+teniendo las mismas propiedades importadas para el background, header, nav y footer. */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#contenedor {
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*---- BODY HEADER ----*/
+
+.body-header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+.body-header img:hover {
+  border-radius: 100%;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+/*---- NAV ----*/
+
+nav {
+  position: relative;
+  width: 45%;
+  height: 50px;
+  margin: auto;
+  justify-content: space-around;
+  background-color: #086075;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  z-index: 5;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #086075;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li:hover ul {
+  display: block;
+  width: 20%;
+  height: fit-content;
+  padding: 10px;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #075669;
+  border-radius: 5px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*---- MAIN ----*/
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+  height: 50px;
+  padding-top: 15px;
+  margin-top: 35px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+#presentacion {
+  position: relative;
+  margin: auto;
+  text-align: justify;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  color: #cfdbe0;
+  background-color: rgba(83, 50, 50, 0.9);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+#presentacion p {
+  padding: 10px;
+  font-size: 17px;
+}
+
+.section-footer {
+  position: relative;
+  text-align: center;
+  height: 50px;
+  padding-top: 15px;
+  margin-bottom: 40px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*---- ASIDE ----*/
+
+#patrocinadores {
+  width: 90%;
+  text-align: center;
+  margin: 50px auto;
+}
+
+#patrocinadores h3,
+#mapa h3 {
+  width: 25%;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 20px auto;
+  padding: 5px;
+}
+
+#patrocinadores img {
+  margin-right: 10px;
+}
+
+#mapa {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/*---- FOOTER ----*/
+
+.web-footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0;
+  height: fit-content;
+  background-color: #086075;
+}
+
+.rrss {
+  text-align: center;
+  border-bottom: 2px solid #ffffff;
+  width: 15%;
+  margin-bottom: 10px;
+}
+
+.rrss img {
+  width: 40px;
+  height: 40px;
+}
+
+.rrss img:hover {
+  background-color: #0b4553;
+  border-radius: 5px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.enlaces {
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  width: 35%;
+}
+
+.enlaces ul,
+.enlaces ul a {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: 12px;
+}
+
+.enlaces a:hover {
+  width: fit-content;
+  height: fit-content;
+  background-color: #0b4553;
+  border-radius: 5px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.copy {
+  color: #f7f7f7;
+  font-size: 12px;
+  text-align: center;
+}
+
+/*----- DISEÑO RESPONSIVO -----*/
+
+/* Desde el diseño base, se ha tenido en cuenta el diseño responsivo 
+y la futura adaptación a dispositivos móviles, por lo que los ajustes son mínimos*/
+
+/* Adaptación de ancho fijo de resoluciones de más de 1300px de ancho.*/
+
+@media screen and (min-width: 1300px) {
+  main {
+    width: 100%;
+  }
+
+  nav {
+    width: 50%;
+  }
+
+  nav a {
+    font-size: 1.2em;
+  }
+
+  #presentacion {
+    width: 50%;
+  }
+
+  #presentacion p {
+    font-size: 1.2em;
+  }
+}
+
+/* Adaptación para tablets, usando de referencia iPad Air 
+(opción predefinida en las herramientas de desarrollador de Chrome.
+Adapta tanto en vertical como en horizontal gracias a los ajustes de diseño base */
+
+@media screen and (min-width: 820px) and (max-width: 1300px) {
+  main {
+    width: 100%;
+  }
+
+  nav {
+    width: 90%;
+  }
+
+  nav a {
+    font-size: 1.2em;
+  }
+  #presentacion {
+    width: 90%;
+  }
+  #presentacion p {
+    font-size: 1.5em;
+  }
+  #patrocinadores h3 {
+    width: fit-content;
+    padding: 5px 30px;
+  }
+  .rrss {
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+    width: 25%;
+    margin-bottom: 10px;
+  }
+  .enlaces {
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 35%;
+  }
+}
+
+/* Adaptación para móviles, usando de referencia iPhone 12 Pro 
+(opción predefinida en las herramientas de desarrollador de Chrome 
+Adapta tanto en vertical como en horizontal gracias a los ajustes de diseño base */
+
+@media screen and (min-width: 390px) and (max-width: 819px) {
+  main {
+    width: 100%;
+  }
+  nav {
+    width: 80%;
+    height: fit-content;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  nav ul li:hover ul {
+    display: block;
+    width: 50%;
+    height: fit-content;
+    padding: 10px;
+  }
+
+  .section-header {
+    text-align: center;
+    height: fit-content;
+    padding: 5px;
+  }
+
+  #presentacion {
+    width: 90%;
+  }
+
+  #patrocinadores h3,
+  #mapa h3 {
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+  }
+
+  #patrocinadores img {
+    height: 70px;
+    margin: 5px;
+  }
+
+  #mapa iframe {
+    width: 98%;
+  }
+
+  .rrss {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .enlaces {
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 70%;
+  }
+}

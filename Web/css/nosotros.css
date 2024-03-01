@@ -1,0 +1,92 @@
+@import url(index.css);
+
+.nosotros article {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.card {
+  text-align: center;
+  width: 20%;
+  height: fit-content;
+  margin: 5px 20px;
+  font-size: 18px;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  border: 3px solid rgb(245, 223, 193);
+}
+
+.card h3 {
+  margin: 15px 0;
+  padding: 5px 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.card h4 {
+  margin: 30px 0 15px 0;
+  padding: 5px 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  text-align: justify;
+  width: 90%;
+  height: fit-content;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+/*----- DISEÑO RESPONSIVO -----*/
+
+/* Desde el diseño base, se ha tenido en cuenta el diseño responsivo 
+y la futura adaptación a dispositivos móviles, por lo que los ajustes son mínimos*/
+
+/* Adaptación de ancho fijo de resoluciones de más de 1300px de ancho.*/
+
+@media screen and (min-width: 1300px) {
+  .card {
+    width: 30%;
+    margin: 5px;
+    font-size: 0.95em;
+  }
+}
+
+/* Adaptación para tablets, usando de referencia iPad Air 
+(opción predefinida en las herramientas de desarrollador de Chrome.
+Adapta tanto en vertical como en horizontal gracias a los ajustes de diseño base */
+
+@media screen and (min-width: 820px) and (max-width: 1300px) {
+  .nosotros article {
+    display: block;
+    width: 95%;
+    margin-left: 65px;
+  }
+  .card {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+}
+
+/* Adaptación para móviles, usando de referencia iPhone 12 Pro 
+(opción predefinida en las herramientas de desarrollador de Chrome 
+Adapta tanto en vertical como en horizontal gracias a los ajustes de diseño base */
+
+@media screen and (min-width: 390px) and (max-width: 819px) {
+  .nosotros article {
+    display: block;
+    width: 95%;
+  }
+  .card {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+}

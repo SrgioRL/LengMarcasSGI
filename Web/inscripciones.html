@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/inscripciones.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <div id="Contenedor">
+      <!-- HEADER -->
+
+      <header class="body-header">
+        <a href="index.html"> <img src="img/Logo.png" alt="Cabecera" /></a>
+      </header>
+
+      <!-- NAV -->
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li>
+            <a href="#">Eventos &#8942;</a>
+            <ul>
+              <li><a href="#">Torneos</a></li>
+              <li><a href="#">Presentaciones</a></li>
+              <li><a href="#">Aprende a Jugar</a></li>
+            </ul>
+          </li>
+          <li><a href="inscripciones.html">Inscripciones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- FORMULARIO -->
+
+      <div class="formulario">
+        <h2>¡Realiza tu inscripción!</h2>
+        <form action="enviarDatos.jsp" method="post">
+          <fieldset>
+            <legend>Datos personales</legend>
+            <br />
+
+            <label for="nombre">Nombre * </label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              required
+              placeholder="Escriba su nombre"
+            />
+            <label for="apellidos">Apellidos </label>
+            <input
+              type="text"
+              name="apellidos"
+              id="apellidos"
+              required
+              placeholder="Escriba sus apellidos"
+            />
+            <label for="telefono">Teléfono </label>
+            <input
+              type="tel"
+              name="telefono"
+              id="telefono"
+              pattern="[0-9]+"
+              required
+              placeholder="Introduzca su número de teléfono"
+            />
+            <label for="email">Email * </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Escriba su email"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Cupcake ipsum dolor sit amet *</legend>
+            <div id="contenedor-evento">
+              <label>
+                <input type="radio" name="evento" value="Ev1" required /> Tipo 1
+              </label>
+              <label>
+                <input type="radio" name="evento" value="Ev2" required /> Tipo 2
+              </label>
+              <label>
+                <input type="radio" name="evento" value="Ev3" required /> Tipo 3
+              </label>
+              <label>
+                <input type="radio" name="evento" value="Ev4" required /> Tipo 4
+              </label>
+              <label>
+                <input type="radio" name="evento" value="Ev5" required /> Tipo 5
+              </label>
+              <label>
+                <input type="radio" name="evento" value="Ev6" required /> Tipo 6
+              </label>
+              <label>
+                <input type="radio" name="evento" value="Ev7" required /> Tipo 7
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Cupcake ipsum dolor sit amet</legend>
+            <div id="contenedor-mod">
+              <label>
+                <input type="checkbox" name="Mod1" value="Mod1" /> Modo 1
+              </label>
+              <label>
+                <input type="checkbox" name="Mod2" value="Mod2" /> Modo 2
+              </label>
+              <label>
+                <input type="checkbox" name="Mod3" value="Mod3" /> Modo 3
+              </label>
+              <label>
+                <input type="checkbox" name="Mod4" value="Mod4" /> Modo 4
+              </label>
+              <label>
+                <input type="checkbox" name="Mod5" value="Mod5" /> Modo 5
+              </label>
+              <label>
+                <input type="checkbox" name="Mod6" value="Mod6" /> Modo 6
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Cupcake ipsum dolor sit amet</legend>
+
+            <input
+              id="año"
+              type="number"
+              min="1900"
+              max="2023"
+              name="año"
+              placeholder="Introduzca su año de nacimiento"
+              required
+            />
+
+            <select name="dia" id="dia">
+              <option value="D1">Cupcake 1</option>
+              <option value="D2">Cupcake 2</option>
+              <option value="D3">Cupcake 3</option>
+              <option value="D4">Cupcake 4</option>
+              <option value="D5">Cupcake 5</option>
+              <option value="D6">Cupcake 6</option>
+              <option value="D7">Cupcake 7</option>
+              <option value="D8">Cupcake 8</option></select
+            ><br />
+
+            <input type="date" name="fecha" />
+          </fieldset>
+
+          <fieldset>
+            <legend>¿Quieres comentarnos algo?</legend>
+            <label for="asunto">Asunto</label>
+            <input type="text" name="asunto" id="asunto" placeholder="Asunto" />
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              placeholder="Déjenos aquí su mensaje..."
+            ></textarea>
+          </fieldset>
+
+          <fieldset id="condiciones">
+            <legend>Términos y condiciones *</legend>
+            Acepto los <a href="#"> términos y condiciones de uso</a>
+            <input type="checkbox" name="terminos" value="terminos" required />
+          </fieldset>
+          <button id="submit" type="submit">ENVIAR</button>
+          <button id="clear" type="reset">RESTABLECER</button>
+
+          <p>Los campos * son obligatorios</p>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <!-- FOOTER -->
+
+  <footer class="web-footer">
+    <div class="rrss">
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="img/instagram.png" alt="Instagram" title="Instagram"
+      /></a>
+      <a href="https://www.twitter.com/" target="_blank"
+        ><img src="img/twitter.png" alt="Twitter" title="Twitter"
+      /></a>
+      <a href="https://www.facebook.com/" target="_blank"
+        ><img src="img/facebook.png" alt="Facebook" title="Facebook"
+      /></a>
+      <a href="https://www.youtube.com/" target="_blank"
+        ><img src="img/youtube.png" alt="YouTube" title="YouTube"
+      /></a>
+    </div>
+    <div class="enlaces">
+      <ul>
+        <a href="#"><li>Política de privacidad</li></a>
+        <a href="#"><li>Términos y condiciones</li></a>
+        <a href="#"><li>Preguntas frecuentes</li></a>
+      </ul>
+    </div>
+    <div class="copy">©2023</div>
+  </footer>
+</html>

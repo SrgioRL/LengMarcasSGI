@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/contacto.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <div id="Contenedor">
+      <!-- HEADER -->
+
+      <header class="body-header">
+        <a href="index.html"> <img src="img/Logo.png" alt="Cabecera" /></a>
+      </header>
+
+      <!-- NAV -->
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li>
+            <a href="#">Eventos &#8942;</a>
+            <ul>
+              <li><a href="#">Torneos</a></li>
+              <li><a href="#">Presentaciones</a></li>
+              <li><a href="#">Aprende a Jugar</a></li>
+            </ul>
+          </li>
+          <li><a href="inscripciones.html">Inscripciones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- FORMULARIO -->
+
+      <div class="formulario">
+        <h2>Contacte con nosotros</h2>
+        <form action="enviarDatos.jsp" method="post">
+          <fieldset>
+            <legend>Rellene estos campos</legend>
+
+            <label for="nombre">Nombre * </label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              required
+              placeholder="Escriba su nombre"
+            />
+
+            <label for="email">Email * </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Escriba su email"
+            />
+
+            <label for="asunto">Asunto * </label>
+            <input
+              type="text"
+              name="asunto"
+              id="asunto"
+              required
+              placeholder="Asunto"
+            />
+            <label for="mensaje">Mensaje *</label>
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              required
+              placeholder="Déjenos aquí su mensaje..."
+            ></textarea>
+          </fieldset>
+
+          <fieldset id="condiciones">
+            Acepto los <a href="#"> términos y condiciones de uso</a>*
+            <input type="checkbox" name="terminos" value="terminos" required />
+          </fieldset>
+          <fieldset>
+            <button id="submit" type="submit">ENVIAR</button>
+            <button id="clear" type="reset">RESTABLECER</button>
+
+            <p>Los campos * son obligatorios</p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <!-- FOOTER -->
+
+  <footer class="web-footer">
+    <div class="rrss">
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="img/instagram.png" alt="Instagram" title="Instagram"
+      /></a>
+      <a href="https://www.twitter.com/" target="_blank"
+        ><img src="img/twitter.png" alt="Twitter" title="Twitter"
+      /></a>
+      <a href="https://www.facebook.com/" target="_blank"
+        ><img src="img/facebook.png" alt="Facebook" title="Facebook"
+      /></a>
+      <a href="https://www.youtube.com/" target="_blank"
+        ><img src="img/youtube.png" alt="YouTube" title="YouTube"
+      /></a>
+    </div>
+    <div class="enlaces">
+      <ul>
+        <a href="#"><li>Política de privacidad</li></a>
+        <a href="#"><li>Términos y condiciones</li></a>
+        <a href="#"><li>Preguntas frecuentes</li></a>
+      </ul>
+    </div>
+    <div class="copy">©2023</div>
+  </footer>
+</html>
